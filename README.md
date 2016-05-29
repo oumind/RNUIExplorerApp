@@ -72,5 +72,5 @@ v0.26.2
 
 1. 复制图片，复制 react-native/Examples/UIExplorer/UIExplorer/Images.xcassets/ 到 RNUIExplorerApp/ios/RNUIExplorerApp/ 目录
 
-#打包
->TODO
+#TODO
+>项目自动化生成
