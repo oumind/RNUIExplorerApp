@@ -20,13 +20,13 @@ v0.26.2
 4. 删除 index.android.js 和 index.ios.js 文件
 5. 分别将 UIExplorerApp.android.js 和 UIExplorerApp.ios.js 重名为 index.android.js 和 index.ios.js
 6. 将 index.android.js 和 index.ios.js 中的
-```
-   AppRegistry.registerComponent('UIExplorerApp', () => UIExplorerApp);
-   修改为
-   AppRegistry.registerComponent('RNUIExplorerApp', () => UIExplorerApp);
-```
+    ```
+    AppRegistry.registerComponent('UIExplorerApp', () => UIExplorerApp);
+    修改为
+    AppRegistry.registerComponent('RNUIExplorerApp', () => UIExplorerApp);
+    ```
 7. 添加 package.json 文件, 内容如下：
-```
+    ```
     {
       "name": "RNUIExplorerApp",
       "version": "0.26.2",
@@ -40,7 +40,7 @@ v0.26.2
         "react-timer-mixin": "^0.13.2"
       }
     }
-```
+    ```
 
 ##android 项目修改如下
 
@@ -48,32 +48,29 @@ v0.26.2
 2. 复制图片，复制 react-native/Examples/UIExplorer/android/app/src/main/res/drawable/ 到 RNUIExplorerApp/android/app/src/main/res/ 目录
 3. 修改权限，修改 AndroidManifest.xml 文件
 
-```
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    ```
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
-修改为
+    修改为
 
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-<uses-permission android:name="android.permission.VIBRATE"/>
-
-```
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    ```
 4. 修改图标，修改 AndroidManifest.xml 文件
 
-```
-
-android:icon="@mipmap/ic_launcher"
-修改为
-android:icon="@drawable/launcher_icon"
-
-```
+    ```
+    android:icon="@mipmap/ic_launcher"
+    修改为
+    android:icon="@drawable/launcher_icon"
+    ```
 
 ##iOS 项目修改如下
 
 1. 复制图片，复制 react-native/Examples/UIExplorer/UIExplorer/Images.xcassets/ 到 RNUIExplorerApp/ios/RNUIExplorerApp/ 目录
 
-#打包
->TODO
+#TODO
+>项目自动化生成
